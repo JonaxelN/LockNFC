@@ -1,0 +1,14 @@
+version: '2.1'
+
+services:
+  locknfc:
+    image: locknfc:dev
+    build:
+      args:
+        source: ${DOCKER_BUILD_SOURCE}
+    volumes:
+      - .\LockNFC:C:\app
+      - ~\msvsmon:C:\msvsmon:ro
+    entrypoint: powershell -Command [System.Threading.Thread]::Sleep([System.Threading.Timeout]::Infinite)
+    labels:
+      - "com.microsoft.visualstudio.targetoperatingsystem=windows"

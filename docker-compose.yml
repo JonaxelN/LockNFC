@@ -1,0 +1,8 @@
+version: '2.1'
+
+services:
+  locknfc:
+    image: locknfc
+    build:
+      context: .\LockNFC
+      dockerfile: Dockerfile

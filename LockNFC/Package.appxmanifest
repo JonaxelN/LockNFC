@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities" IgnorableNamespaces="uap mp rescap">
+  <Identity Name="2c5750aa-57ea-45d2-9850-09f8754c59e1" Publisher="CN=axel.nunez" Version="1.0.0.0" />
+  <mp:PhoneIdentity PhoneProductId="2c5750aa-57ea-45d2-9850-09f8754c59e1" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>LockNFC</DisplayName>
+    <PublisherDisplayName>axel.nunez</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="LockNFC.App">
+      <uap:VisualElements DisplayName="LockNFC" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="LockNFC" BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png">
+        </uap:DefaultTile>
+        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+      </uap:VisualElements>
+      <Extensions>
+        <Extension Category="windows.backgroundTasks" EntryPoint="Tasks.BgTaskLockNfc">
+          <BackgroundTasks>
+            <Task Type="systemEvent" />
+            <uap:Task Type="chatMessageNotification" />
+          </BackgroundTasks>
+        </Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <uap:Capability Name="sharedUserCertificates" />
+    <rescap:Capability Name="secondaryAuthenticationFactor" />
+    <DeviceCapability Name="proximity" />
+  </Capabilities>
+</Package>

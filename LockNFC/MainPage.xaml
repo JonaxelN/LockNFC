@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="LockNFC.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LockNFC"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Button Content="Button" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top" Height="134" Width="260" Grid.Row="0" Grid.RowSpan="2" Click="Button_Click"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="138,284,0,0" Grid.Row="1" VerticalAlignment="Top" Click="Button_Click_1"/>
+
+    </Grid>
+</Page>
