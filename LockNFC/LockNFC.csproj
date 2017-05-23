@@ -154,15 +154,15 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\Downloads\Windows-universal-samples-master %281%29\NfcHceBackgroundTask\NfcHceBackgroundTask.vcxproj">
+    <ProjectReference Include="..\NfcHceBackgroundTask\NfcHceBackgroundTask.vcxproj">
       <Project>{79b23f0f-6382-5740-a5e6-78e47825bca4}</Project>
       <Name>NfcHceBackgroundTask</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Downloads\Windows-universal-samples-master %281%29\PcscSdk\PcscSdk.csproj">
+    <ProjectReference Include="..\PcscSdk\PcscSdk.csproj">
       <Project>{3c2b6ac0-dded-5c9c-a624-eaac7d6cd730}</Project>
       <Name>PcscSdk</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Downloads\Windows-universal-samples-master %281%29\Tasks\Tasks.csproj">
+    <ProjectReference Include="..\Tasks\Tasks.csproj">
       <Project>{cea8e664-3e8b-4188-808b-ba20b2be278e}</Project>
       <Name>Tasks</Name>
     </ProjectReference>

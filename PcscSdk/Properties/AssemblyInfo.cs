@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Tasks")]
+[assembly: AssemblyTitle("SDKTemplate")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Tasks")]
-[assembly: AssemblyCopyright("Copyright ©  2016")]
+[assembly: AssemblyCompany("Microsoft Corporation")]
+[assembly: AssemblyProduct("Windows Samples")]
+[assembly: AssemblyCopyright("Copyright © Microsoft Corporation")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
